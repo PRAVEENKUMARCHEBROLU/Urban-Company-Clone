@@ -1,0 +1,83 @@
+.service-details-page {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f8f9fb;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.service-card-details {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card-details:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.service-card-details img {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.service-info {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.service-info p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.service-info strong {
+  color: #222;
+}
+
+.book-btn {
+  margin-top: 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card-details {
+    padding: 1.5rem;
+  }
+
+  .service-card-details img {
+    height: 250px;
+  }
+}
